@@ -1,12 +1,12 @@
-# SOW-002
+# SOW-002 / SOW-003
 
 ## Title
 
-Create the first isolated skill named `say`.
+Create and extend the isolated skill named `say`.
 
 ## Objective
 
-Deliver a minimal skill mini project with a `hello` CLI command, Docker-only tests, and full project gating.
+Deliver a minimal skill mini project with a `hello` CLI command, a browser-facing `hello` page, Docker-only tests, and full project gating.
 
 ## Deliverables
 
@@ -14,6 +14,6 @@ Deliver a minimal skill mini project with a `hello` CLI command, Docker-only tes
 - skill-local `.env` with version metadata
 - skill-local `Changes`
 - `hello` CLI command
+- DD-style `dashboards/hello` page
 - skill-local tests under `t/`
 - Docker-based verification documentation
-

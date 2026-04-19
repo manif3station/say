@@ -1,7 +1,11 @@
 Revision history for say
 
+0.02 2026-04-19
+    - added the DD-style dashboards/hello page asset
+    - added skill-local route rendering for /app/say/hello
+    - added Playwright browser verification for the hello page
+
 0.01 2026-04-19
     - bootstrapped the say skill mini project
     - added the hello CLI command
     - added Docker-only tests and 100% coverage verification
-
