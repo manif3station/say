@@ -1,5 +1,9 @@
 Revision history for say
 
+0.05 2026-04-20
+    - clarified that say is a testing and onboarding skill for the Developer Dashboard skill system
+    - updated README.md and docs to focus on install, uninstall, CLI dispatch, and browser route demonstration
+
 0.04 2026-04-20
     - moved project-management markdown files into tickets/
     - normalized documentation home paths to use ~/

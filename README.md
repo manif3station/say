@@ -2,7 +2,7 @@
 
 ## Description
 
-`say` is an isolated Developer Dashboard skill that adds a minimal greeting capability to the dashboard skill system.
+`say` is an isolated Developer Dashboard skill for testing and demonstrating the Developer Dashboard skill system. It exists so a new user has a real skill to land on when first exploring what skills are, how they are installed, how they are uninstalled, how skill CLI commands run, and how skill browser pages work.
 
 ## Value
 
@@ -11,16 +11,17 @@
 - CLI command delivery through a skill command entrypoint
 - browser page delivery through the DD-style `/app/<skill>/<page>` route contract
 
-It is useful as a baseline for future skills because it shows the smallest practical shape of a working skill without extra moving parts.
+It is intentionally simple because its purpose is framework testing and first-use onboarding. Nothing more and nothing less.
 
 ## Problem It Solves
 
-When starting a new skill, it is easy to guess at folder layout, route behavior, command structure, and test strategy. That leads to drift and rework.
+When someone first encounters Developer Dashboard, a skill can otherwise remain abstract. Users need something concrete they can install, run, browse, and remove so they can understand how the skill system behaves in practice.
 
 ## What It Does To Solve It
 
 `say` provides:
 
+- an installable and removable example skill
 - a CLI command at `cli/hello`
 - a Perl implementation module for the CLI behavior
 - a DD-style page asset at `dashboards/hello`
@@ -32,6 +33,7 @@ When starting a new skill, it is easy to guess at folder layout, route behavior,
 
 This skill adds:
 
+- a safe first skill to install and uninstall while learning DD skills
 - the dotted command usage `dashboard say.hello`
 - the DD-style skill page route `/app/say/hello`
 
@@ -80,6 +82,8 @@ Expected output:
 hello
 ```
 
+This command is intentionally minimal. Its purpose is to prove that DD skill CLI dispatch works.
+
 Within Developer Dashboard after installation:
 
 ```bash
@@ -111,6 +115,8 @@ Expected rendered output:
 - page title: `Hello World`
 - page heading: `Hello World`
 
+This page is intentionally minimal. Its purpose is to prove that DD skill browser routing works.
+
 ## Practical Examples
 
 Normal case, direct CLI development:
@@ -126,10 +132,22 @@ Normal case, installed DD command:
 dashboard say.hello
 ```
 
+Normal case, install the skill:
+
+```bash
+dashboard skills install https://github.com/example/say.git
+```
+
 Normal case, browser route:
 
 ```text
 http://127.0.0.1:7890/app/say/hello
+```
+
+Normal case, uninstall after trying it:
+
+```bash
+dashboard skills uninstall say
 ```
 
 ## Edge Cases
@@ -137,6 +155,10 @@ http://127.0.0.1:7890/app/say/hello
 If the skill is not installed:
 
 - `dashboard say.hello` will not dispatch because DD will not know the skill
+
+If the skill has been uninstalled:
+
+- `/app/say/hello` should no longer be available through Developer Dashboard
 
 If the browser route is wrong:
 
@@ -156,6 +178,7 @@ See:
 
 - `docs/overview.md`
 - `docs/usage.md`
+- `docs/changes/2026-04-20-skill-purpose-clarification.md`
 - `docs/changes/2026-04-19-doc-gate.md`
 - `docs/changes/2026-04-20-document-layout-gate.md`
 
