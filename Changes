@@ -1,5 +1,10 @@
 Revision history for say
 
+0.03 2026-04-19
+    - added the required docs/ documentation structure
+    - expanded README.md to the enforced documentation gate format
+    - documented installation, CLI usage, browser usage, and practical examples
+
 0.02 2026-04-19
     - added the DD-style dashboards/hello page asset
     - added skill-local route rendering for /app/say/hello
