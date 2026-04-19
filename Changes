@@ -1,0 +1,7 @@
+Revision history for say
+
+0.01 2026-04-19
+    - bootstrapped the say skill mini project
+    - added the hello CLI command
+    - added Docker-only tests and 100% coverage verification
+
