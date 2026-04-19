@@ -62,11 +62,7 @@ Example:
 dashboard skills install https://github.com/example/say.git
 ```
 
-For local development in this workspace, the skill source is at:
-
-```text
-~/projects/skills/skills/say
-```
+For local development, work from the checked-out `say` skill repository in your own workspace.
 
 ## CLI Usage
 
