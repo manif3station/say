@@ -1,5 +1,10 @@
 Revision history for say
 
+0.04 2026-04-20
+    - moved project-management markdown files into tickets/
+    - normalized documentation home paths to use ~/
+    - aligned the say repo layout with the updated document gate
+
 0.03 2026-04-19
     - added the required docs/ documentation structure
     - expanded README.md to the enforced documentation gate format

@@ -13,7 +13,7 @@ dashboard skills install <git-url-to-say-skill>
 Direct local development:
 
 ```bash
-cd /home/mv/projects/skills/skills/say
+cd ~/projects/skills/skills/say
 perl cli/hello
 ```
 

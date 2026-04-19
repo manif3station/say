@@ -63,7 +63,7 @@ dashboard skills install https://github.com/example/say.git
 For local development in this workspace, the skill source is at:
 
 ```text
-/home/mv/projects/skills/skills/say
+~/projects/skills/skills/say
 ```
 
 ## CLI Usage
@@ -116,7 +116,7 @@ Expected rendered output:
 Normal case, direct CLI development:
 
 ```bash
-cd /home/mv/projects/skills/skills/say
+cd ~/projects/skills/skills/say
 perl cli/hello
 ```
 
@@ -157,6 +157,7 @@ See:
 - `docs/overview.md`
 - `docs/usage.md`
 - `docs/changes/2026-04-19-doc-gate.md`
+- `docs/changes/2026-04-20-document-layout-gate.md`
 
 ## Testing
 
