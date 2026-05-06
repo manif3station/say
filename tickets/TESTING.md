@@ -28,3 +28,13 @@ docker compose -f ~/projects/skills/docker-compose.testing.yml run --rm perl-tes
   - `docker compose -f ~/projects/skills/docker-compose.testing.yml run --rm perl-test bash -lc 'rm -rf /workspace/skills/say/cover_db'`
   - Result: pass
 
+## Latest Verification For `DD-051`
+
+- Functional test:
+  - `docker compose -f ~/projects/skills/docker-compose.testing.yml run --rm perl-test bash -lc 'cd /workspace/skills/say && prove -lr t'`
+  - Result: pass
+  - Test count: `Files=5, Tests=20`
+- Coverage test:
+  - `docker compose -f ~/projects/skills/docker-compose.testing.yml run --rm perl-test bash -lc 'cd /workspace/skills/say && cover -delete && HARNESS_PERL_SWITCHES=-MDevel::Cover prove -lr t && cover -report text -select_re "^lib/" -coverage statement -coverage subroutine'`
+  - Result: pass
+  - Coverage: `100.0%` statement and `100.0%` subroutine for `lib/Say/Hello.pm` and `lib/Say/Web.pm`

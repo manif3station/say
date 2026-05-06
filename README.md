@@ -64,6 +64,12 @@ dashboard skills install https://github.com/example/say.git
 
 For local development, work from the checked-out `say` skill repository in your own workspace.
 
+## License
+
+`say` is released under the MIT License.
+
+See [LICENSE](LICENSE).
+
 ## CLI Usage
 
 Within the skill repository during direct local development:

@@ -6,7 +6,7 @@ Create, extend, and document-align the isolated skill named `say`.
 
 ## Objective
 
-Deliver a minimal skill mini project with a `hello` CLI command, a browser-facing `hello` page, Docker-only tests, and a clean documentation layout that matches the current workspace rules.
+Deliver a minimal skill mini project with a `hello` CLI command, a browser-facing `hello` page, Docker-only tests, a clean documentation layout that matches the current workspace rules, and an explicit MIT license for reuse and distribution.
 
 ## Deliverables
 
@@ -18,4 +18,4 @@ Deliver a minimal skill mini project with a `hello` CLI command, a browser-facin
 - skill-local tests under `t/`
 - Docker-based verification documentation
 - project-management markdown grouped under `tickets/`
-
+- explicit MIT license and README license documentation
